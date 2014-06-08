@@ -1,0 +1,13 @@
+PODS:
+  - Canvas (0.1.1)
+  - SWTableViewCell (0.3.0)
+
+DEPENDENCIES:
+  - Canvas (~> 0.1.1)
+  - SWTableViewCell
+
+SPEC CHECKSUMS:
+  Canvas: 45356a2e61087a776bfde5090676d290cf67f7f2
+  SWTableViewCell: 1725f7607ce4c154264c18aeb78e4636b11b0b29
+
+COCOAPODS: 0.33.1

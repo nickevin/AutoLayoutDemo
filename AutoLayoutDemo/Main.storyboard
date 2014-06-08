@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ypL-uI-xRd">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Auto Layout Controller - Root View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="AutoLayoutController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="cQK-BL-xCr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="IKU-aM-Y53">
+                                <rect key="frame" x="0.0" y="207" width="320" height="361"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AutoLayoutTableCell" rowHeight="96" id="gqY-ZC-lyu" customClass="AutoLayoutTableCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gqY-ZC-lyu" id="KaC-Xt-7qC">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXH-I4-pzU" customClass="CSAnimationView">
+                                                    <rect key="frame" x="20" y="10" width="165" height="75"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkF-9e-86S">
+                                                            <rect key="frame" x="0.0" y="0.0" width="165" height="75"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                            <real key="value" value="0.40000000000000002"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                            <real key="value" value="0.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="slideRight"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l67-Xh-cah" customClass="CSAnimationView">
+                                                    <rect key="frame" x="225" y="10" width="75" height="75"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="y3A-70-2gG">
+                                                            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.96862745100000003" green="0.0052607645610000002" blue="0.024220088399999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="y3A-70-2gG" secondAttribute="bottom" id="6Mk-kt-ZPo"/>
+                                                        <constraint firstAttribute="trailing" secondItem="y3A-70-2gG" secondAttribute="trailing" id="L5b-L1-Eyw"/>
+                                                        <constraint firstItem="y3A-70-2gG" firstAttribute="top" secondItem="l67-Xh-cah" secondAttribute="top" id="QnT-SP-KUk"/>
+                                                        <constraint firstItem="y3A-70-2gG" firstAttribute="leading" secondItem="l67-Xh-cah" secondAttribute="leading" id="hue-SJ-HpI"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="slideLeft"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                            <real key="value" value="0.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                            <real key="value" value="0.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YXH-I4-pzU" firstAttribute="top" secondItem="l67-Xh-cah" secondAttribute="top" id="3JG-5s-zki"/>
+                                                <constraint firstItem="l67-Xh-cah" firstAttribute="centerY" secondItem="KaC-Xt-7qC" secondAttribute="centerY" id="9Yv-89-yOV"/>
+                                                <constraint firstItem="YXH-I4-pzU" firstAttribute="leading" secondItem="KaC-Xt-7qC" secondAttribute="leading" constant="20" symbolic="YES" id="bh5-CS-Ex3"/>
+                                                <constraint firstItem="YXH-I4-pzU" firstAttribute="bottom" secondItem="l67-Xh-cah" secondAttribute="bottom" id="vSE-9i-Bv9"/>
+                                                <constraint firstItem="l67-Xh-cah" firstAttribute="leading" secondItem="YXH-I4-pzU" secondAttribute="trailing" constant="40" id="vpW-Ny-qGZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="l67-Xh-cah" secondAttribute="trailing" constant="20" symbolic="YES" id="wPz-cw-Amk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="FkF-9e-86S" id="KB0-B2-0Hb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="qMO-wq-XBR"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="sOW-KH-0p1"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IKU-aM-Y53" firstAttribute="trailing" secondItem="cQK-BL-xCr" secondAttribute="trailing" id="6ip-Hj-GVJ"/>
+                            <constraint firstItem="IKU-aM-Y53" firstAttribute="leading" secondItem="cQK-BL-xCr" secondAttribute="leading" id="FFD-Im-lhX"/>
+                            <constraint firstItem="cQK-BL-xCr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="GcT-R3-Cpg"/>
+                            <constraint firstAttribute="trailing" secondItem="cQK-BL-xCr" secondAttribute="trailing" id="KdG-GB-C1F"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cQK-BL-xCr" secondAttribute="bottom" constant="288" id="P4G-sO-jNL"/>
+                            <constraint firstItem="cQK-BL-xCr" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="dQ3-CK-8CE"/>
+                            <constraint firstItem="IKU-aM-Y53" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="143" id="e2r-7B-P9m"/>
+                            <constraint firstAttribute="bottom" secondItem="IKU-aM-Y53" secondAttribute="bottom" id="kjg-D8-SM8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="rYm-Sd-aPC"/>
+                    <connections>
+                        <outlet property="autoLayoutTableView" destination="IKU-aM-Y53" id="Evq-GE-t90"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684" y="110"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HYE-qT-DsY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ypL-uI-xRd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PeK-67-0VJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="bYU-aq-NAI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8mr-2u-Z4X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224" y="110"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="banner" width="1280" height="960"/>
+        <image name="logo" width="75" height="75"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
